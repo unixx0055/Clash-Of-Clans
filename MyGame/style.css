@@ -1,5 +1,200 @@
-.center{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/Clash-Of-Clans-1080p-Wallpaper.jpg);
+}
+header{
+padding: 30px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+section{
+    height: 80vh;
+    width: 80vw;
+    /* border: 1px solid; */
+    margin: auto;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section nav{
     display: flex;
     align-items: center;
-    justify-content: Center;
+    justify-content: space-between;
 }
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: white;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.2);
+    display: none;
+    /* transition: 600ms ease; */
+}
+.drop-el{
+    border-radius: 10px;
+    padding: 10px;
+    transition: 100ms ease;
+    /* margin-top: 10px; */
+}
+
+.has-dropdown:focus-within .dropdown{
+    display: block;
+}
+.drop-el:hover{
+    background: rgba(128, 128, 128, 0.57);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    transition: 200ms ease-in-out;
+}
+.nav-link a:hover{
+    /* border-bottom: 3px solid white; */
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .5);
+}
+
+.profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    filter: grayscale(1);
+    transition: 600ms ease;
+}
+
+.profile:hover{
+    filter: grayscale(0);
+}
+
+.join-btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: transparent;
+    filter: grayscale(1) opacity(1);
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.2);
+    cursor: pointer;  
+    transition: 600ms ease; 
+}
+
+.join-btn:hover{
+    background: white;
+    scale: 1.1 1.08;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 10px;
+    /* border: 1px solid; */
+}
+
+.social-link{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social-item a{
+    text-decoration: none;
+    
+}
+.social-img{
+    width: 25px;
+    opacity: 0.7;
+    transition: 200ms ease-out;
+}
+.social-item a:hover .social-img{
+    opacity: 1;
+    transform: translateY(-2px);
+}
+.poster img{
+    margin-left:auto ;
+    width: 350px;
+}
+.poster-text{
+    font-size: 3vw;
+    margin-left: 30px;
+    color: rgb(4, 77, 4);
+    /* text-shadow: 1px 1px 3px #d5fbf4; */
+}
+.poster-text p span{
+    font-weight: 600;
+    color: rgb(255, 255, 0);
+}
+.btn{
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    /* filter: grayscale(1) opacity(1); */
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.6);
+    cursor: pointer;
+}
+.download{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 40px;
+}
+.dnld-btn{
+    background-color: aquamarine;
+    transition: 600ms ease;
+}
+.dnld-btn:focus-within{
+    background-color: rgb(44, 139, 107); 
+    color: white;   
+}
+.change{
+    width: 100%;
+    /* border: 1px solid; */
+}
+.change-btn{
+    margin-left: 92%;
+    padding: 16px 20px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: transparent;
+    filter: grayscale(1) opacity(1);
+    box-shadow: 0 0 30px rgba(0, 0, 0,0.6);
+    cursor: pointer;
+    transition: 600ms ease;
+}
+
+.change-btn:hover{
+    background: #e1d8d87e;
+    transform: translateY(-5px);
+
+}
+
